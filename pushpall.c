@@ -12,7 +12,10 @@ void f_pall(stack_t **head, unsigned int counter)
 
 	h = *head;
 	if (h == NULL)
+	{
+		fprintf(stderr, "Error: The stack is empty\n");
 		return;
+	}
 	while (h)
 	{
 		printf("%d\n", h->n);
